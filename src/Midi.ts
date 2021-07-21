@@ -45,6 +45,7 @@ export class Midi {
 				midiArray = new Uint8Array(midiArray);
 			}
 			midiData = parseMidi(midiArray);
+			console.log(midiData);
 
 			// add the absolute times to each of the tracks
 			midiData.tracks.forEach(track => {
